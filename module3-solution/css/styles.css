@@ -1,0 +1,131 @@
+/* Navbar styles */
+.navbar {
+  background-color: #fff;
+  border: 10px;
+  margin-bottom: 0;
+}
+
+/* Page Heading styles */
+.container h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 2em;
+}
+
+/* Tall Section styles */
+.tall-section {
+  height: 1000px; /* Adjust height as needed */
+  background-color: #f0f0f0; /* Set desired background color */
+}
+
+/* Menu Items styles */
+.menu-items {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.menu-items h4 {
+  margin-bottom: 30px;
+}
+/* Mobile view - Show item names only */
+@media (max-width: 767px) {
+  .menu-items p {
+    display: none; /* Hide descriptions */
+  }
+
+  .menu-items h4 {
+    margin-bottom: 0; /* Remove bottom margin for item names */
+  }
+}
+/* Mobile view - Show item names and descriptions */
+@media (max-width: 767px) {
+  .menu-item {
+    display: block; /* Ensure menu items are visible */
+  }
+
+  .menu-items h4 {
+    margin-bottom: 10px; /* Restore bottom margin for item names */
+  }
+
+  .menu-items p {
+    display: block; /* Show descriptions */
+    margin-bottom: 20px; /* Add margin between descriptions */
+  }
+}
+/* Hide item names in tablet and desktop view above the horizontal line */
+@media (min-width: 768px) {
+  .navbar-nav li {
+    display: none; /* Hide navbar items */
+  }
+}
+/* Make "Food, LLC" and "Our Menu" font size bold */
+.navbar-brand,
+.container h1 {
+  font-weight: bold;
+}
+/* Make item names bold */
+.menu-item h4 {
+  font-weight: bold;
+}
+/* Style for individual menu items */
+.menu-item {
+  background-color: #81baad; /* Light grey background */
+  padding: 15px; /* Padding inside the boxes */
+  margin: 10px; /* Left and right margin of 10px */
+  width: calc((100% - 60px - 40px)); /* Calculate width considering left and right margins and space between items */
+  text-align: center; /* Center-align text */
+  display: inline-block; /* Display items in a line */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  vertical-align: top; /* Align items at the top */
+  border: 10px;
+}
+
+@media (max-width: 767px) {
+  .menu-item {
+    width: calc(100% - 60px); /* Adjust width for mobile view */
+    margin: 10px; /* Adjust margin for mobile view */
+  }
+}
+
+
+/* Ensure items appear in vertical layout */
+.menu-items .row {
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Arrange items in a column */
+  align-items: center; /* Align items in the center horizontally */
+}
+/* Style for mobile view above the horizontal line */
+@media (max-width: 767px) {
+  .navbar-nav {
+    text-align: center; /* Center-align the items */
+  }
+
+  .navbar-nav li {
+    display: block; /* Display list items as blocks */
+    margin: 10px 0; /* Add vertical margin between items */
+    border-top: 1px solid #0c0909; /* Add horizontal line above each item */
+    padding-top: 10px; /* Add space above the text */
+  }
+}
+/* Background above Our Menu section */
+.menu-items {
+  background-color: #ced2d3; /* Grey background color */
+  padding-top: 20px; /* Add padding to create space */
+  margin-bottom: 20px; /* Add margin at the bottom */
+}
+/* Navbar and Company Name Section Styles */
+.navbar {
+  background-color: #86c3c7; /* Grey background color for navbar */
+}
+
+.navbar .navbar-brand {
+  color: #0f0f02; /* Change the color of the text if needed */
+}
+.navbar .navbar-nav > li > a {
+  color: #d40d0d; /* Change the color of the navbar items */
+}
+
+
+
+
+
